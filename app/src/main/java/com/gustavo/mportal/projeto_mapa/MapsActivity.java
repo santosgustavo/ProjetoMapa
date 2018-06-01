@@ -65,9 +65,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .icon(BitmapDescriptorFactory.fromResource(R.mipmap.mark_black));
 
         InfoWindowData info = new InfoWindowData();
-        info.setHotel("Motorista : Gustavo Oliveira");
-        info.setFood("Velocidade : 62 km/h");
-        info.setTransport("Status : true");
+        info.setMotorista("Motorista : Gustavo Oliveira");
+        info.setChassi("Chassi: 89001");
+        info.setLocalizacao("Localização: Av. Ramiro corlleone - Santo André - SP");
+        info.setPlaca("Placa: BXT-7135");
+        info.setUltimaPosicao("Última Posição: 01/06/2018 16:18:12");
 
         CustomInfoWindowGoogleMap customInfoWindow = new CustomInfoWindowGoogleMap(this);
         mMap.setInfoWindowAdapter(customInfoWindow);
