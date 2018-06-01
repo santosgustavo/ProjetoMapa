@@ -61,14 +61,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         MarkerOptions markerOptions = new MarkerOptions();
         markerOptions.position(snowqualmie)
-                .title("Snowqualmie Falls")
-                .snippet("Snoqualmie Falls is located 25 miles east of Seattle.")
+                .title("Honda City")
                 .icon(BitmapDescriptorFactory.fromResource(R.mipmap.mark_black));
 
         InfoWindowData info = new InfoWindowData();
-        info.setHotel("Hotel : excellent hotels available");
-        info.setFood("Food : all types of restaurants available");
-        info.setTransport("Reach the site by bus, car and train.");
+        info.setHotel("Motorista : Gustavo Oliveira");
+        info.setFood("Velocidade : 62 km/h");
+        info.setTransport("Status : true");
 
         CustomInfoWindowGoogleMap customInfoWindow = new CustomInfoWindowGoogleMap(this);
         mMap.setInfoWindowAdapter(customInfoWindow);
