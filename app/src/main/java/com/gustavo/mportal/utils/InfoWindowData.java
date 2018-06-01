@@ -1,31 +1,49 @@
 package com.gustavo.mportal.utils;
 
 public class InfoWindowData {
-    private String hotel;
-    private String food;
-    private String transport;
+    private String ultimaPosicao;
+    private String localizacao;
+    private String placa;
+    private String motorista;
+    private String chassi;
 
-    public String getHotel() {
-        return hotel;
+    public String getUltimaPosicao() {
+        return ultimaPosicao;
     }
 
-    public void setHotel(String hotel) {
-        this.hotel = hotel;
+    public void setUltimaPosicao(String ultimaPosicao) {
+        this.ultimaPosicao = ultimaPosicao;
     }
 
-    public String getFood() {
-        return food;
+    public String getLocalizacao() {
+        return localizacao;
     }
 
-    public void setFood(String food) {
-        this.food = food;
+    public void setLocalizacao(String localizacao) {
+        this.localizacao = localizacao;
     }
 
-    public String getTransport() {
-        return transport;
+    public String getPlaca() {
+        return placa;
     }
 
-    public void setTransport(String transport) {
-        this.transport = transport;
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    public String getMotorista() {
+        return motorista;
+    }
+
+    public void setMotorista(String motorista) {
+        this.motorista = motorista;
+    }
+
+    public String getChassi() {
+        return chassi;
+    }
+
+    public void setChassi(String chassi) {
+        this.chassi = chassi;
     }
 }
