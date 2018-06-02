@@ -1,5 +1,6 @@
 package com.gustavo.mportal.projeto_mapa;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -26,4 +27,8 @@ public class InfoActivity extends AppCompatActivity {
         });
     }
 
+    public void startSegundaTela(View v){
+        Intent intent = new Intent(this, InfoActivity.class);
+        startActivity(intent);
+    }
 }

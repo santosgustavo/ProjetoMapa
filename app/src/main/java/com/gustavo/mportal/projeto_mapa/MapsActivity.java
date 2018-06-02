@@ -2,10 +2,13 @@ package com.gustavo.mportal.projeto_mapa;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.view.View;
+
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -47,10 +50,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.setMinZoomPreference(11);
 
-        LatLng snowqualmie = new LatLng(47.5287132, -121.8253906);
+        LatLng jabaquara = new LatLng( -23.646012, -46.638124);
 
         MarkerOptions markerOptions = new MarkerOptions();
-        markerOptions.position(snowqualmie)
+        markerOptions.position(jabaquara)
                 .title("Honda City")
                 .icon(BitmapDescriptorFactory.fromResource(R.mipmap.mark_black));
 
@@ -67,7 +70,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Marker m = mMap.addMarker(markerOptions);
         m.setTag(info);
 
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(snowqualmie));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(jabaquara));
+
+
     }
+
 
 }
